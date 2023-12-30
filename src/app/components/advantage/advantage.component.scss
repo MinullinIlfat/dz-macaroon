@@ -1,0 +1,67 @@
+.advantage {
+  grid-row: 3 / 4;
+}
+
+.advantage:hover .advantage-number {
+  background-color: #eba8b1;
+  transition-duration: 500ms;
+}
+
+.advantage:hover .number {
+  color: #821328;
+  transition-duration: 500ms;
+}
+
+.advantage-number {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  background-color: #821328;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.number {
+  font-family: GilroyExtraBold, sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 60px;
+  line-height: 0.70;
+}
+
+
+.advantage-title {
+  font-size: 20px;
+  font-family: GilroyExtraBold, sans-serif;
+  color: rgb(51, 25, 7);
+}
+
+.advantage-text {
+  font-size: 15px;
+  font-family: GilroyMedium, sans-serif;
+  color: rgb(51, 25, 7);
+  width: 218px;
+  margin: 13px 0 20px 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .advantage {
+    grid-row: auto;
+  }
+
+  .advantage-number {
+    margin: 0 auto 13px auto;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .advantage-title {
+    font-size: 18px;
+  }
+
+  .advantage-text {
+    width: 165px;
+    font-size: 13px;
+    line-height: 1.385;
+  }
+}
